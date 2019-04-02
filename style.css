@@ -138,3 +138,28 @@ img.card-image{
     display: table-cell;
     width: 50%;
 }
+
+div.progress-bar1{
+    width: 60%;
+    border-radius: 15px;
+    background-color: black;
+    box-shadow: 0 0 0 4pt black; 
+    margin:auto;
+}
+
+div.progress-bar2{
+    border-radius: 15px;
+    box-shadow: 0 0 0 2pt white;
+}
+  
+div.skills{
+    text-align: right;
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+}
+
+div.html{
+    width: 90%; 
+    background-color: purple;
+}
