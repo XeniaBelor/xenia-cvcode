@@ -142,8 +142,8 @@ img.card-image{
 div.progress-bar1{
     width: 60%;
     border-radius: 15px;
-    background-color: black;
-    box-shadow: 0 0 0 4pt black; 
+    background-color: #353535;
+    box-shadow: 0 0 0 4pt #353535; 
     margin:auto;
 }
 
@@ -161,5 +161,5 @@ div.skills{
 
 div.html{
     width: 90%; 
-    background-color: purple;
+    background-color: #8247e0b9;
 }
