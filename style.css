@@ -8,6 +8,7 @@ body,html{
     height: 100%;
     width:100%;
     margin:0;
+    color: white;
 }
 
 html{
@@ -47,7 +48,6 @@ ul.navbar{
     background-color: rgb(255, 255, 255);
     font-size: 15px;
     border-radius: 0;
-    z-index: 2;
 }
 
 li{
@@ -153,3 +153,30 @@ div.Python{width: 60%;background: linear-gradient(300deg, rgba(195,94,222,1) 12%
 div.Illustrator{width: 90%; background: linear-gradient(300deg, rgba(85,141,227,1) 11%, rgba(57,114,201,1) 50%, rgba(40,94,176,1) 100%);}
 div.Photoshop{width: 75%; background: linear-gradient(300deg, rgba(85,141,227,1) 11%, rgba(57,114,201,1) 50%, rgba(40,94,176,1) 100%);}
 div.Bootstrap{width: 80%; background: linear-gradient(300deg, rgba(85,141,227,1) 11%, rgba(57,114,201,1) 50%, rgba(40,94,176,1) 100%);}
+
+#scrollToTopButton {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+    padding: 0;
+    border: 0;
+    width: 60px;
+    height: 60px;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+    font-size: xx-large;
+    outline: 0;
+    visibility: hidden;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+#scrollToTopButton.show {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+}
+  

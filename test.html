@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+    body,
+html {
+  color: #fff;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.section {
+  height: 100%;
+  padding: 8px;
+}
+.section:nth-child(odd) {
+  background-color: deepPink;
+}
+.section:nth-child(even) {
+  background-color: mediumSpringGreen;
+}
+
+#scrollToTopButton {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #fff;
+  padding: 0;
+  border: 0;
+  width: 60px;
+  height: 60px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+  font-size: xx-large;
+  outline: 0;
+  visibility: hidden;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.2s;
+}
+#scrollToTopButton.show {
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+}
+
+    </style>
+
+</head>
+<body>
+        
+    <button id="scrollToTopButton" onclick="scrollToTop(300,3);">    <i class="material-icons">arrow_upward</i></button>
+        <div class="section">
+          <h1>Section 1</h1>
+        </div>
+        
+        <div class="section">
+          <h1>Section 2</h1>
+        </div>
+        
+        <div class="section">
+          <h1>Section 3</h1>
+        </div>
+        
+        <div class="section">
+          <h1>Section 4</h1>
+        </div>
+        
+        <div class="section">
+          <h1>Section 5</h1>
+        </div>
+        
+        <div class="section">
+          <h1>Section 6</h1>
+        </div>
+        
+        <div class="section">
+          <h1>Section 7</h1>
+        </div>
+        
+        <div class="section">
+          <h1>Section 8</h1>
+        </div>
+        
+        <div class="section">
+          <h1>Section 9</h1>
+        </div>
+        
+        <div class="section">
+          <h1>Section 10</h1>
+        </div>
+
+    <script>
+    var html, body, scrollToTopButton;
+window.onload = function() {
+  html = document.documentElement;
+  body = document.body;
+  scrollToTopButton = document.getElementById("scrollToTopButton");
+};
+
+function scrollToTop(totalTime, easingPower) {
+  //console.log("here");
+  var timeInterval = 1; //in ms
+  var scrollTop = Math.round(body.scrollTop || html.scrollTop);
+  //var by=- scrollTop;
+  var timeLeft = totalTime;
+  var scrollByPixel = setInterval(function() {
+    var percentSpent = (totalTime - timeLeft) / totalTime;
+    if (timeLeft >= 0) {
+      var newScrollTop = scrollTop * (1 - easeInOut(percentSpent, easingPower));
+      body.scrollTop = newScrollTop;
+      html.scrollTop = newScrollTop;
+      //console.log(easeInOut(percentSpent,easingPower));
+      timeLeft--;
+    } else {
+      clearInterval(scrollByPixel);
+      //Add hash to the url after scrolling
+      //window.location.hash = hash;
+    }
+  }, timeInterval);
+}
+
+function easeInOut(t, power) {
+  if (t < 0.5) {
+    return 0.5 * Math.pow(2 * t, power);
+  } else {
+    return 0.5 * (2 - Math.pow(2 * (1 - t), power));
+  }
+}
+
+window.onscroll = controlScrollToTopButton;
+
+function controlScrollToTopButton() {
+  var windowInnerHeight = 2 * window.innerHeight;
+  if (
+    body.scrollTop > windowInnerHeight ||
+    html.scrollTop > windowInnerHeight
+  ) {
+    scrollToTopButton.classList.add("show");
+  } else {
+    scrollToTopButton.classList.remove("show");
+  }
+}
+
+    </script>
+
+</body>
+</html>

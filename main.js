@@ -42,3 +42,24 @@ function init(){
     const wait = txtElement.getAttribute('data-wait');
     new TypeWriter(txtElement, words, wait);
 }
+
+var html, body, scrollToTopButton;
+window.onload = function() {
+  html = document.documentElement;
+  body = document.body;
+  scrollToTopButton = document.getElementById("scrollToTopButton");
+};
+
+window.onscroll = controlScrollToTopButton;
+
+function controlScrollToTopButton() {
+  var windowInnerHeight = 0.5 * window.innerHeight;
+  if (
+    body.scrollTop > windowInnerHeight ||
+    html.scrollTop > windowInnerHeight
+  ) {
+    scrollToTopButton.classList.add("show");
+  } else {
+    scrollToTopButton.classList.remove("show");
+  }
+}
