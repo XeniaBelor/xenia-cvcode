@@ -47,6 +47,7 @@ ul.navbar{
     background-color: rgb(255, 255, 255);
     font-size: 15px;
     border-radius: 0;
+    z-index: 2;
 }
 
 li{
@@ -74,6 +75,7 @@ div.container1{
     transform:translate(-50%,-50%);
     color:white;
     text-align:center;
+    z-index: 1;
 }
 
 .txt-type > .txt{
