@@ -68,6 +68,61 @@ li a:hover{
     text-decoration: none;
 }
 
+@media only screen and (max-width: 760px){
+    ul.navbar{
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width: 760px){
+    div.dropdownbar{
+        visibility: hidden;
+    }
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width:100px;
+    padding: 10px 10px;
+    display: inline-flex;
+    vertical-align: middle;
+}
+  
+div.dropdownbar {
+    position:fixed;
+    display: inline-block;
+    top:0;
+}
+  
+.dropdownbar-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdownbar-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdownbar-content a:hover {background-color: #f1f1f1}
+  
+.dropdownbar:hover .dropdownbar-content {
+    display: block;
+}
+  
+.dropdownbar:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
 div.container1{
     position:absolute;
     top:50%;
@@ -92,9 +147,15 @@ div.container1{
         transform: translateX(0%);
     }
 }
-  
-.show{
-    animation: slideIn 5s ease-in-out;
+
+h1.section1{
+    font-size:40px;
+}
+
+@media only screen and (max-width: 760px){
+    h1.section1{
+        font-size: 22px;
+    }
 }
 
 .col-container{
@@ -156,8 +217,8 @@ div.Bootstrap{width: 80%; background: linear-gradient(300deg, rgba(85,141,227,1)
 
 #scrollToTopButton {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 5%;
+    right: 3%;
     border-radius: 50%;
     cursor: pointer;
     background: #fff;
@@ -178,5 +239,12 @@ div.Bootstrap{width: 80%; background: linear-gradient(300deg, rgba(85,141,227,1)
     visibility: visible;
     transform: scale(1);
     opacity: 1;
+}
+
+@media only screen and (max-width: 760px){
+    #scrollToTopButton{
+        width: 45px;
+        height: 45px;
+    }
 }
   
