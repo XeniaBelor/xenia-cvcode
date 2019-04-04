@@ -42,5 +42,3 @@ function init(){
     const wait = txtElement.getAttribute('data-wait');
     new TypeWriter(txtElement, words, wait);
 }
-
-
