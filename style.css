@@ -68,12 +68,12 @@ li a:hover{
     text-decoration: none;
 }
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 641px){
     ul.navbar{
         visibility: hidden;
     }
 }
-@media only screen and (min-width: 760px){
+@media only screen and (min-width: 641px){
     div.dropdownbar{
         visibility: hidden;
     }
@@ -152,7 +152,7 @@ h1.section1{
     font-size:40px;
 }
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 641px){
     h1.section1{
         font-size: 22px;
     }
@@ -171,7 +171,7 @@ h1.section1{
     width: 50%;
 }
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 641px){
     .col-container{
         text-align: center;
     }
@@ -241,10 +241,9 @@ div.Bootstrap{width: 80%; background: linear-gradient(300deg, rgba(85,141,227,1)
     opacity: 1;
 }
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 641px){
     #scrollToTopButton{
         width: 45px;
         height: 45px;
     }
 }
-  
