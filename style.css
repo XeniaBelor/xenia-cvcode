@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-
 body{
-    font-family: 'Roboto Condensed', sans-serif !important;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-
 body,html{
     height: 100%;
     width:100%;
@@ -229,7 +226,6 @@ div.SQL{width: 80%; background: linear-gradient(300deg, rgba(195,94,222,1) 12%, 
 div.Python{width: 60%;background: linear-gradient(300deg, rgba(195,94,222,1) 12%, rgba(147,54,201,1) 50%, rgba(128,44,177,1) 100%);}
 div.Illustrator{width: 90%; background: linear-gradient(300deg, rgba(85,141,227,1) 11%, rgba(57,114,201,1) 50%, rgba(40,94,176,1) 100%);}
 div.Photoshop{width: 75%; background: linear-gradient(300deg, rgba(85,141,227,1) 11%, rgba(57,114,201,1) 50%, rgba(40,94,176,1) 100%);}
-div.Bootstrap{width: 80%; background: linear-gradient(300deg, rgba(85,141,227,1) 11%, rgba(57,114,201,1) 50%, rgba(40,94,176,1) 100%);}
 
 #scrollToTopButton {
     position: fixed;
