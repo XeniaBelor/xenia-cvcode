@@ -302,9 +302,10 @@ p.description{
     margin: auto;
 }
 
-p.footertext{   
-    color:rgba(255, 255, 255, 0.473);
+p.footertext{
+    color:rgb(255, 255, 255);
     position: relative;
-    bottom: -60%;
-    padding-left:10px;
+    bottom:-50%;
+    padding-left:2%;
 }
+
