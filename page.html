@@ -5,25 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
-<body>  
-    
-    <!--Navbar-->
-    <ul class="navbar">
-        <li><a class="active" href="#part1">Home</a></li>
-        <li><a href="#part2">About</a></li>
-        <li><a href="#part4">Education</a></li>
-        <li><a href="#panel5">Contact</a></li>
-        <li style="float:right"><a href="#panel5">Images</a></li>
-    </ul>
-    
+<body>
     <!--Section 1-->
     <div id="part1" class="parallax-picture1">
+        <ul class="navbar">
+            <li><a href="#part2">About</a></li>
+            <li><a href="#part4">Education</a></li>
+            <li><a href="#part5">Contact</a></li>
+        </ul>
+
+        <div class="dropdownbar">
+            <button class="dropbtn"><i class="material-icons">view_headline</i>MENU</button>
+            <div class="dropdownbar-content">
+            <a href="#part1">Home</a>
+            <a href="#part2">About</a>
+            <a href="#part4">Education</a>
+            <a href="#part5">Contact</a>
+            </div>
+        </div>
+                            
         <!--Typing text-->
         <div class="container1">
             <h1 class="section1">{ Welcome 
@@ -33,95 +38,96 @@
         </div>
     </div>
 
+    <button id="scrollToTopButton" onclick="window.scrollTo(0, 0);"><i class="material-icons">arrow_upward</i></button>
+    
     <!--Section 2-->
-    <div id="part2"class="panel1">
-            <!--Containers-->
-            <div class="col-container">
-                <!--Container 1-->
-                <div class="col">
-                    <div class="card">
-                        <img class="card-image" src="images/avatar-me.png" alt="Avatar">
-                    </div>
-                </div>
-                <!--Container 2-->
-                <div class="col">
-                    <!--Progressbar-->
-                    <h1>SKILLS:</h1>
-                    <!--TEST1-->
-                    <h2>HTML</h2>    
-                        <div class="progress-bar1">
-                            <div class="progress-bar2">
-                                <div class="skills html"></div>
-                            </div>
-                        </div>
-                    <!--TEST2-->
-                    <h2>HTML</h2>
-                        <div class="progress-bar1">
-                            <div class="progress-bar2">
-                                <div class="skills html"></div>
-                            </div>
-                        </div>
-                    <!--TEST3-->
-                    <h2>HTML</h2>
-                        <div class="progress-bar1">
-                            <div class="progress-bar2">
-                                <div class="skills html"></div>
-                            </div>
-                        </div>
-                    <!--TEST4-->
-                    <h2>HTML</h2>
-                        <div class="progress-bar1">
-                            <div class="progress-bar2">
-                                <div class="skills html"></div>
-                            </div>
-                        </div>
-                    <!--TEST5-->
-                    <h2>HTML</h2>
-                        <div class="progress-bar1">
-                            <div class="progress-bar2">
-                                <div class="skills html"></div>
-                            </div>
-                        </div> 
-                    <!--TEST6-->
-                    <h2>HTML</h2>
-                        <div class="progress-bar1">
-                            <div class="progress-bar2">
-                                <div class="skills html"></div>
-                            </div>
-                        </div>
-                    <!--TEST7-->
-                    <h2>HTML</h2>
-                        <div class="progress-bar1">
-                            <div class="progress-bar2">
-                                <div class="skills html"></div>
-                            </div>
-                        </div>                             
+    <div id="part2" class="col-container">
+        <!--Container 1-->
+        <div class="col">
+            <h1 class="namepart">ABOUT:</h1>
+            <div class="card">
+                <img class="card-image" src="images/avatar-me0.png" alt="avatar">
+                <h1 class="namepart">Xenia Belor</h2>
+                <p class="description">From Tallinn | 22 years old</p>
+            <h1 class="namepart">TRAITS</h2>
+                <img class="traits-image" src="images/1trait.png" alt="Hardworker" title="Hard worker">
+                <img class="traits-image" src="images/2trait.png" alt="Neat" title="Neat">
+                <img class="traits-image" src="images/3trait.png" alt="Friendly" title="Friendly">
+                <img class="traits-image" src="images/4trait.png" alt="Ready to help" title="Ready to help">
+            </div>
+        </div>
+        <!--Container 2-->
+        <div class="col">
+            <h1 class="namepart">SKILLS:</h1>
+            <div class="progress-bar1">
+                <div class="progress-bar2">
+                    <div class="skills html">HTML</div>
                 </div>
             </div>
+            <div class="progress-bar1">
+                <div class="progress-bar2">
+                    <div class="skills css">CSS</div>
+                </div>
+            </div>
+            <div class="progress-bar1">
+                <div class="progress-bar2">
+                    <div class="skills PHP">PHP</div>
+                </div>
+            </div>
+            <div class="progress-bar1">
+                <div class="progress-bar2">
+                    <div class="skills JavaScript">JavaScript</div>
+                </div>
+            </div>
+            <div class="progress-bar1">
+                <div class="progress-bar2">
+                    <div class="skills SQL">SQL</div>
+                </div>
+            </div>
+            <div class="progress-bar1">
+                <div class="progress-bar2">
+                    <div class="skills Python">Python</div>
+                </div>
+            </div>
+            <div class="progress-bar1">
+                <div class="progress-bar2">
+                    <div class="skills Java">Java</div>
+                </div>
+            </div>
+            <div class="progress-bar1">
+                <div class="progress-bar2">
+                    <div class="skills Illustrator">Adobe Illustrator</div>
+                </div>
+            </div>
+            <div class="progress-bar1">
+                <div class="progress-bar2">
+                    <div class="skills Photoshop">Adobe Photoshop</div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--Section 3-->
     <div id="part3"class="parallax-picture2"></div>
     
     <!--Section 4-->
-    <div id="part4"class="panel1">
-            <!--Containers-->
-            <div class="col-container">
-                <!--Container 1-->
-                <div class="col">
-                    <h2>Column 1</h2>
-                    <p>Hello World!1</p>
-                </div>
-                <!--Container 2-->
-                <div class="col">
-                    <h2>Column 2</h2>
-                    <p>Hello World!</p>
-                </div>
-            </div>
+    <div id="part4" class="col-container">
+        <div class="col">
+            <h1 class="namepart">Education</h1>
+            <p class="description">(Click on image for more info)</p>
+            <img class="years-images" src="images/years.png" alt="2003-2001years" id="primarySchool" onclick="change();">
+            <img class="years-images" src="images/years2.png" alt="2011-2015years" id="highSchool" onclick="change2();">
+            <img class="years-images" src="images/years3.png" alt="2016-2019years" id="university" onclick="change3();">
+            <h1 class="namepart">Extras</h1>
+            <img class="years-images" src="images/extra.png" alt="2002-2011years" id="musicSchool" onclick="change4();">
+            <img class="years-images" src="images/extra2.png" alt="2009-2012years" id="artSchool" onclick="change5();">
+        </div>
     </div>
-
+           
     <!--Section 5-->
-    <div id="panel5" class="panel2"></div>
+    <div id="part5" class="panel2">
+        
+    </div>
 
     <script src="main.js"></script>
 

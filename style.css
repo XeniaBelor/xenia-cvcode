@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-
-body{
-    font-family: 'Roboto Condensed', sans-serif !important;
+*{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 body,html{
     height: 100%;
     width:100%;
     margin:0;
+    color: white;
 }
 
 html{
@@ -32,13 +31,6 @@ html{
     background-size: cover;
 }
 
-.panel1{
-    height:100%;
-    background-color: white;
-    font-size:12px;
-    text-align:center;
-}
-
 .panel2{
     height:20%;
     background-color: gray;
@@ -47,15 +39,13 @@ html{
 
 ul.navbar{
     list-style-type: none;
-    position:fixed;
     width: 100%;
     top: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     font-size: 15px;
     border-radius: 0;
-    z-index: 2;
 }
 
 li{
@@ -64,16 +54,87 @@ li{
 
 li a{
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 16px 18px;
     text-decoration: none;
 }
 
 li a:hover{
-    background-color: #353535;
+    background-color: #9336c9;
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 641px){
+    ul.navbar{
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width: 641px){
+    div.dropdownbar{
+        visibility: hidden;
+    }
+}
+
+.dropbtn {
+    border:none;
+    outline: none;
+    display: inline-flex;
+    vertical-align: middle;
+    position:relative;
+    width:100px;
+    padding: 10px 10px;
+    left: 10%;
+    top: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    -webkit-box-shadow: 0px 9px 17px -6px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 9px 17px -6px rgba(0,0,0,0.17);
+    box-shadow: 0px 9px 17px -6px rgba(0,0,0,0.17);
+}
+  
+div.dropdownbar {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+}
+  
+.dropdownbar-content {
+    display: none;
+    outline: none;
+    position: relative;
+    background-color: white;
+    width: 100px;
+    z-index: 1;
+    top:10px;
+    border-radius: 25px;
+    left: 10%;
+    -webkit-box-shadow: 0px 9px 17px -6px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 9px 17px -6px rgba(0,0,0,0.17);
+    box-shadow: 0px 9px 17px -6px rgba(0,0,0,0.17);
+}
+  
+.dropdownbar-content a {
+    color: rgba(0, 0, 0, 0.473);
+    border-radius: 25px;
+    padding: 12px 16px;
+    display: block;
+    outline: none;
+    text-decoration: none;
+}
+  
+.dropdownbar-content a:hover {
+    background-color: #f1f1f1;
+    color:black;
+    outline: none;
+    text-decoration: none;
+}
+  
+.dropdownbar:hover .dropdownbar-content {
+    display: block;
 }
 
 div.container1{
@@ -100,38 +161,23 @@ div.container1{
         transform: translateX(0%);
     }
 }
-  
-.show{
-    animation: slideIn 5s ease-in-out;
+
+h1.section1{
+    font-size:40px;
 }
 
-div.card{
-    box-shadow: 0 4px 12px 0 rgba(130, 71, 224, 0.726);
-    transition: 0.3s;
-    width: 60%;
-    height: 70%;
-    color: Black;
-    background-color:white;
-    margin:auto;
-    position: relative;
-    top:150px;
-}
-
-.card:hover{
-    box-shadow: 0 8px 20px 0 rgba(96, 17, 223, 0.726);
-}
-
-img.card-image{
-    width: 60%;
-    margin:auto;
-    position: relative;
-    top:100px;
+@media only screen and (max-width: 641px){
+    h1.section1{
+        font-size: 22px;
+    }
 }
 
 .col-container{
     display: table;
     width: 100%;
     height: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .col{
@@ -139,12 +185,25 @@ img.card-image{
     width: 50%;
 }
 
+@media only screen and (max-width: 806px){
+    .col-container{
+        text-align: center;
+    }
+    .col {
+        display: block;
+        width: 100%;
+    }
+    div.progress-bar1{
+        margin: auto;
+    }
+}
+
 div.progress-bar1{
     width: 60%;
     border-radius: 15px;
     background-color: #353535;
-    box-shadow: 0 0 0 4pt #353535; 
-    margin:auto;
+    box-shadow: 0 0 0 4pt #353535;
+    margin: 5% auto;
 }
 
 div.progress-bar2{
@@ -153,13 +212,90 @@ div.progress-bar2{
 }
   
 div.skills{
-    text-align: right;
-    padding: 10px;
+    text-align: left;
+    padding: 4px 10px;
     color: white;
     border-radius: 15px;
+    font-size: 15px;
 }
 
-div.html{
-    width: 90%; 
-    background-color: #8247e0b9;
+div.html{width: 90%; background: linear-gradient(300deg, #c35ede 12%, #9336c9 50%, #802cb1 100%);}
+div.css{width: 85%; background: linear-gradient(300deg, #c35ede 12%, #9336c9 50%, #802cb1 100%);}
+div.PHP{width: 87%;background: linear-gradient(300deg, #c35ede 12%, #9336c9 50%, #802cb1 100%);}
+div.JavaScript{width: 70%; background: linear-gradient(300deg, #c35ede 12%, #9336c9 50%, #802cb1 100%);}
+div.SQL{width: 80%; background: linear-gradient(300deg, #c35ede 12%, #9336c9 50%, #802cb1 100%);}
+div.Python{width: 60%;background: linear-gradient(300deg, #c35ede 12%, #9336c9 50%, #802cb1 100%);}
+div.Java{width: 60%;background: linear-gradient(300deg, #c35ede 12%, #9336c9 50%, #802cb1 100%);}
+div.Illustrator{width: 90%; background: linear-gradient(300deg, #558de3 11%, #3972c9 50%, #285eb0 100%);}
+div.Photoshop{width: 75%; background: linear-gradient(300deg, #558de3 11%, #3972c9 50%, #285eb0 100%);}
+
+#scrollToTopButton {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+    padding: 0;
+    border: 0;
+    width: 60px;
+    height: 60px;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+    font-size: xx-large;
+    outline: 0;
+    visibility: hidden;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.2s;
 }
+
+#scrollToTopButton.show {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 641px){
+    #scrollToTopButton{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.card {
+    margin: auto;
+    width: 50%;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+    padding: 0 0 10px;
+}
+
+.traits-image{
+    text-align: center;
+    max-height: 60px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img.years-images{
+    max-width: 400px;
+    padding:3px;
+}
+
+h1.namepart{
+    color:rgb(0, 0, 0);
+    margin: auto;
+    padding: 10px;
+}
+
+p.description{
+    color:rgb(105, 105, 105);
+    margin: auto;
+}
+
