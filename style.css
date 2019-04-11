@@ -15,7 +15,6 @@ html{
 
 .parallax-picture1 {
     background-image: url("images/image4.jpg");
-    background-color: #9336c9;
     height:100%;
     background-attachment: fixed;
     background-position: center;
@@ -25,7 +24,6 @@ html{
 
 .parallax-picture2 {
     background-image: url("images/image3.jpg");
-    background-color: #558de3;
     height:100%;
     background-attachment: fixed;
     background-position: center;
