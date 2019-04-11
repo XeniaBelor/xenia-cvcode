@@ -315,4 +315,8 @@ div.loader {
     img.years-images{
         max-width: 150px;
     }
+    .col{
+        display: block;
+        width: 100%;
+    }
 }
