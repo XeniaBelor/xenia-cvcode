@@ -80,7 +80,10 @@ li a:hover{
         font-size:20px;
     }
     .parallax-picture1{
-        background-color: #9336c9;
+        width: 100%;
+    }
+    .parallax-picture2{
+        width: 100%;
     }
 }
 
