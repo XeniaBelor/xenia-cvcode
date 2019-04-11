@@ -15,6 +15,7 @@ html{
 
 .parallax-picture1 {
     background-image: url("images/image4.jpg");
+    background-color: #9336c9;
     height:100%;
     background-attachment: fixed;
     background-position: center;
@@ -24,6 +25,7 @@ html{
 
 .parallax-picture2 {
     background-image: url("images/image3.jpg");
+    background-color: #558de3;
     height:100%;
     background-attachment: fixed;
     background-position: center;
@@ -70,7 +72,18 @@ li a:hover{
     ul.navbar{
         visibility: hidden;
     }
+    #scrollToTopButton{
+        width: 45px;
+        height: 45px;
+    }
+    h1.namepart{
+        font-size:20px;
+    }
+    .parallax-picture1{
+        background-color: #9336c9;
+    }
 }
+
 @media only screen and (min-width: 641px){
     div.dropdownbar{
         visibility: hidden;
@@ -166,12 +179,6 @@ h1.section1{
     font-size:40px;
 }
 
-@media only screen and (max-width: 641px){
-    h1.section1{
-        font-size: 22px;
-    }
-}
-
 .col-container{
     display: table;
     width: 100%;
@@ -183,19 +190,6 @@ h1.section1{
 .col{
     display: table-cell;
     width: 50%;
-}
-
-@media only screen and (max-width: 806px){
-    .col-container{
-        text-align: center;
-    }
-    .col {
-        display: block;
-        width: 100%;
-    }
-    div.progress-bar1{
-        margin: auto;
-    }
 }
 
 div.progress-bar1{
@@ -255,13 +249,6 @@ div.Photoshop{width: 75%; background: linear-gradient(300deg, #558de3 11%, #3972
     visibility: visible;
     transform: scale(1);
     opacity: 1;
-}
-
-@media only screen and (max-width: 641px){
-    #scrollToTopButton{
-        width: 45px;
-        height: 45px;
-    }
 }
 
 .card {
@@ -324,4 +311,10 @@ div.loader {
 	height: 100%;
 	z-index: 9999;
 	background: url('images/5.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+@media only screen and (max-width: 641px){
+    img.years-images{
+        max-width: 150px;
+    }
 }
