@@ -16,6 +16,7 @@ html{
 .parallax-picture1 {
     background-image: url("images/image4.jpg");
     height:100%;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,6 +26,7 @@ html{
 .parallax-picture2 {
     background-image: url("images/image3.jpg");
     height:100%;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,6 +179,7 @@ h1.section1{
     font-size:40px;
     width: 100%;
     display:block;
+    text-decoration:none;
 }
 
 .col-container{
